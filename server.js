@@ -9,18 +9,20 @@ var db = require("./models");
 
 // Sets up the Express app to handle data parsing
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({
+app.use(
+  bodyParser.urlencoded({
     extended: false
-}));
+  })
+);
 
 // parse application/json
 app.use(bodyParser.json());
 
 //lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it. To install: npm i method-override
-app.use(methodOverride('_method'));
-app.use(methodOverride('X-HTTP-Method'));          // Microsoft
-app.use(methodOverride('X-HTTP-Method-Override')); // Google/GData
-app.use(methodOverride('X-Method-Override'));      // IBM
+app.use(methodOverride("_method"));
+app.use(methodOverride("X-HTTP-Method")); // Microsoft
+app.use(methodOverride("X-HTTP-Method-Override")); // Google/GData
+app.use(methodOverride("X-Method-Override")); // IBM
 
 // Static directory to be served
 app.use(express.static("./public"));
@@ -29,17 +31,13 @@ app.use(express.static("./public"));
 var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-app.set('views', path.join(__dirname, 'views/partials')
-);
-
-
+app.set("views", path.join(__dirname, "views/partials"));
 
 // Routes
 // =============================================================
 require("./routes/routes.js")(app);
 
-
-db.sequelize.sync().then(function () {
-    app.listen(PORT);
-    console.log("listening on port:" + PORT);
-})
+db.sequelize.sync().then(function() {
+  app.listen(PORT);
+  console.log("listening on port:" + PORT);
+});
