@@ -18,4 +18,9 @@ Pet List is an webpage where the user can browse pets that need loving homes. Us
 * JavaScript
 * Express Handlebars
 * Sweet Alert (a new package that is a beautiful replacement for success messages, error messages, etc)
+<<<<<<< HEAD
 * Method Override (a new middleware package for requests from clients that only natively support simple verbs like GET and POST. So in those cases you could specify a special query field (or a hidden form field for example) that indicates the real verb to use instead of what was originally sent. That way your backend .put()/.delete()/.patch()/etc. routes don't have to change and will still work and you can accept requests from all kinds of clients.)
+=======
+* Method Override (a new middleware package for requests from clients that only natively support simple verbs like GET and POST. So in those cases you could specify a special query field (or a hidden form field for example) that indicates the real verb to use instead of what was originally sent. That way your backend .put()/.delete()/.patch()/etc. routes don't have to change and will still work and you can accept requests from all kinds of clients.)
+
+>>>>>>> 4e75c3c2c79ab30a3e94af6b382831ce734a103d
