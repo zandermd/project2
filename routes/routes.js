@@ -1,11 +1,10 @@
 //routes.js serves as our controller/router
-//we combined API and HTML routes in one file as 
 
 // Dependencies
 // =============================================================
 var path = require("path");
 var db = require("../models");
-var validatePhoneNumber = require("./validator");
+// var validatePhoneNumber = require("./validator"); --might use later 
 
 // Routes
 // =============================================================
