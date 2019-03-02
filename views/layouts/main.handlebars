@@ -2,7 +2,7 @@
 
 
 
-
+{{!-- jumbotron, duh --}}
 <div class="jumbotron jumbotron-fluid bg-dark">
   <div class="container">
     <h1 class="display-4">Welcome To Pet-Link!</h1>
@@ -11,7 +11,7 @@
 
 
 
-
+{{!-- navbar to navigate --}}
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Pet-Link</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +20,13 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Our Mission<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Age<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Adoption Page</a>
+        <a class="nav-link" href="#">Gender</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us/a>
+        <a class="nav-link" href="#">About Us / Contact</a>
       </li>
     </ul>
     <span class="navbar-text">
@@ -34,6 +34,30 @@
     </span>
   </div>
 </nav>
+
+
+
+
+{{!-- this container will hold Pet-Link mission statement and basic expalination of site --}}
+<div class= "container">
+    <p>
+        Pet-Link is a simple way of exploring pet options around you that are in need of adoption, without the hastle of having to visit an adoption center first. You can refine exactly the pet that you would like to adopt by age and gender as well, so you can find the perfect match for you! All of our pets are grown without hormones, are guarenteed 100% gluten and dairy free.
+
+    </p>
+</div>
+
+
+
+
+{{!-- this container will hold cards with pet info and pictures. --}}
+<div class= "container">
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Hi there! My name is {{name}} I identify as {{gender}} who is {{age}} and would love to find a new home!</p> 
+  </div>
+</div>
+</div>
 
 
 
