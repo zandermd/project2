@@ -1,5 +1,5 @@
 # What is Pet List?
-Pet List is an webpage where the user can browse pets that need loving homes. Users will see the pets photo, name, age, gender, and a little bio about them. Pet List will also let users post a pet for adoption. 
+Pet List is an webpage where the user can browse pets that need loving homes. Users will see the pets photo, name, age, gender, and a little bio about them. Users will be able to click on the pet they want to adopt and contact us for further information. 
 
 # Requirements 
 * Use a Node and Express Web Server
