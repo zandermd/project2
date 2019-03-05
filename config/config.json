@@ -1,8 +1,9 @@
+
 {
   "development": {
     "username": "root",
-    "password": "Bootcamp1!",
-    "database": "database_development",
+    "password": "engel2279",
+    "database": "adopt_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
