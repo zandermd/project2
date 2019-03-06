@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pet-Link Adoption</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
                     <div class="form-area">
-                        {{!-- this form calls the /addcontact route, stores the user's contact information in the people table--}}
+                        <!-- this form calls the /addcontact route, stores the user's contact information in the people table -->
                         <form action="/addcontact" method="POST" role="form">
                             <br style="clear:both">
                             <h3 style="margin-bottom: 25px; text-align: center;">Contact Us</h3>
@@ -47,14 +47,14 @@
                                 <label for="isVolunteerInput">Check here if you interested in volunteering.</label>
                             </div>
 
-                            {{!-- pre-populates the message input with a string indicating interest in adopting the dog the user clicked on --}}
-                            {{#each dog}}
+                            <!-- pre-populates the message input with a string indicating interest in adopting the dog the user clicked on -->
+                            
                             <div class="form-group">
                                 <input class="form-control" name="message" type="textarea" id="messageInput"
                                     placeholder="Message" maxlength="500" rows="7"
                                     value="Hello! I am interested in adopting {{this.petName}}."></input>
                             </div>
-                            {{/each}}
+                            
 
                             <button type="submit" id="contact-submit-btn" class="btn btn-primary pull-right">Submit
                                 Form</button>
