@@ -49,7 +49,7 @@
             {
                 $('#addContactForm').one('submit', function (e) {
                     e.preventDefault();
-                    swal("Thank you for contacting us.", "You successfully submitted your contact information. We will respond within 72 hours.", "success").then(() => {
+                    sweetAlert("Thank you for contacting us.", "You successfully submitted your contact information!", "success").then(() => {
                         console.log($('#addContactForm'));
                         $('#addContactForm').submit();
                     })
