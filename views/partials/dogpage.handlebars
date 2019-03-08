@@ -1,0 +1,29 @@
+<body>
+    <div>
+        <div class="row">
+            <center>
+                <div class='pet-header'>
+                    <h1>Adopt Us</h1>
+                </div>
+            </center>
+            <div class="col-sm-12">
+                {{!-- this for-each loop lists only the pet who have yet to be adopted(their isAdopted boolean value is false) --}}
+                {{#each pet}} {{#unless this.isAdopted}}
+                <div class="col-sm-6 col-md-3 text-center">
+                    <div class="thumbnail pet-container">
+                        <img src="{{this.petImage}}">
+                        <div class="caption">
+                            <h3>{{this.petName}}</h3>
+                            <div class="bio">{{this.petBio}}</div>
+                            <br />
+                            <form method="POST" action="/adoptcontact">
+                                <input type="hidden" name="pet_id" type="text" value={{this.id}}>
+                                <button type="submit" class="btn btn-primary">Adopt Me</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {{/unless}}{{/each}}
+            </div>
+        </div>
+</body>
