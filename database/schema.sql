@@ -12,4 +12,4 @@ VALUES ("Lilly", "Puppy", "F", "https://petharbor.com/get_image.asp?RES=Detail&I
 -- ("Spot", "Adult Cat", "F", "https://petharbor.com/get_image.asp?RES=Detail&ID=A598191&LOCATION=AZHS", "My idea of paradise is a forest made of cat trees!", False),
 -- ("Astro", "Kitten", "M", "https://petharbor.com/get_image.asp?RES=Detail&ID=A599358&LOCATION=AZHS", "I am so fluffy, you might mistake me for a snowball!", False)
 
- --TYPE, SIZE, GOOD WITH-- 
+ --TYPE, SIZE, GOOD WITH--
