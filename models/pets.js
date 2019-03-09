@@ -1,5 +1,10 @@
 //sequelize set up for making the pet tables in the database
 
+var db = require("../models");
+
+
+  
+
 module.exports = function (sequelize, DataTypes) {
     var Pets = sequelize.define("Pets", {
         petName: {

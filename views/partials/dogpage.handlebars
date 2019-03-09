@@ -10,7 +10,7 @@
                 {{!-- this for-each loop lists only the pet who have yet to be adopted(their isAdopted boolean value is false) --}}
                 {{#each pet}} {{#unless this.isAdopted}}
                 <div class="col-sm-6 col-md-3 text-center">
-                    <div class="thumbnail pig-container">
+                    <div class="thumbnail pet-container">
                         <img src="{{this.petImage}}">
                         <div class="caption">
                             <h3>{{this.petName}}</h3>

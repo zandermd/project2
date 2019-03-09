@@ -15,6 +15,9 @@ app.use(
   })
 );
 
+//using css with handlebars
+app.use(express.static('public'));
+
 // parse application/json
 app.use(bodyParser.json());
 
